@@ -1126,7 +1126,7 @@ var t=e(this);t.next("ul").removeClass("is-hidden").end().parent(".has-children"
 //=========
 var t=e(".modernshop-menu").hasClass("open-to-left")?"left":"right";e(".modernshop-dropdown").menuAim({activate:function(n){e(n).children().addClass("is-active").removeClass("fade-out"),0==e(".modernshop-dropdown .fade-in").length&&e(n).children("ul").addClass("fade-in")},deactivate:function(n){e(n).children().removeClass("is-active"),(0==e("li.has-children:hover").length||e("li.has-children:hover").is(e(n)))&&(e(".modernshop-dropdown").find(".fade-in").removeClass("fade-in"),e(n).children("ul").addClass("fade-out"))},exitMenu:function(){return e(".modernshop-dropdown").find(".is-active").removeClass("is-active"),!0},submenuDirection:t}),e(".go-back").on("click",function(){var n=e(this);e(this).parent("ul").parent(".has-children").parent("ul");n.parent("ul").addClass("is-hidden").parent(".has-children").parent("ul").removeClass("move-out")}),(e("[placeholder]").focus(function(){var n=e(this);n.val()==n.attr("placeholder")&&n.val("")}).blur(function(){var n=e(this);""!=n.val()&&n.val()!=n.attr("placeholder")||n.val(n.attr("placeholder"))}).blur(),e("[placeholder]").parents("form").submit(function(){e(this).find("[placeholder]").each(function(){var n=e(this);n.val()==n.attr("placeholder")&&n.val("")})}))}),function(e){
 function n(n){var t=e(this),o=null,i=[],r=null,a=null,l=e.extend({rowSelector:"> li",submenuSelector:"*",submenuDirection:"right",tolerance:75,enter:e.noop,exit:e.noop,activate:e.noop,deactivate:e.noop,exitMenu:e.noop},n),s=3,u=300,c=function(e){i.push({x:e.pageX,y:e.pageY}),i.length>s&&i.shift()},d=function(){a&&clearTimeout(a),l.exitMenu(this)&&(o&&l.deactivate(o),o=null)},h=function(){a&&clearTimeout(a),l.enter(this),m(this)},f=function(){l.exit(this)},v=function(){p(this)},p=function(e){e!=o&&(o&&l.deactivate(o),l.activate(e),o=e)},m=function(e){var n=x();n?a=setTimeout(function(){m(e)},n):p(e)},x=function(){
-function n(e,n){return(n.y-e.y)/(n.x-e.x)}if(!o||!e(o).is(l.submenuSelector))return 0;var a=t.offset(),s={x:a.left,y:a.top-l.tolerance},c={x:a.left+t.outerWidth(),y:s.y},d={x:a.left,y:a.top+t.outerHeight()+l.tolerance},h={x:a.left+t.outerWidth(),y:d.y},f=i[i.length-1],v=i[0];if(!f)return 0;if(v||(v=f),v.x<a.left||v.x>h.x||v.y<a.top||v.y>h.y)return 0;if(r&&f.x==r.x&&f.y==r.y)return 0;var p=c,m=h;"left"==l.submenuDirection?(p=d,m=s):"below"==l.submenuDirection?(p=h,m=d):"above"==l.submenuDirection&&(p=s,m=c);var x=n(f,p),g=n(f,m),C=n(v,p),y=n(v,m);return C>x&&g>y?(r=f,u):(r=null,0)};t.mouseleave(d).find(l.rowSelector).mouseenter(h).mouseleave(f).click(v),e(document).mousemove(c)}e.fn.menuAim=function(e){return this.each(function(){n.call(this,e)}),this}}(jQuery);function countdown() {var e = new Date("Decamber 31, 2021 24:00:00"),t=(new Date).getTime(),o = e - t,l = setInterval(function(){o -= 1e3;var e=Math.floor(o / 864e5),t=Math.floor(o % 864e5 / 36e5),n=Math.floor(o % 36e5 / 6e4),a=Math.floor(o / 1e3 % 60);$(".days").html(e),$(".hours").html(("0" + t).slice(-2)),$(".minutes").html(("0" + n).slice(-2)), $(".seconds").html(("0" + a).slice(-2)), 0 > o && clearInterval(l)}, 1e3)}countdown();$(".button").click(function(){$(".flash").addClass("animate--drop-in-fade-out"),setTimeout(function(){$(".flash").removeClass("animate--drop-in-fade-out")},2500)});
+function n(e,n){return(n.y-e.y)/(n.x-e.x)}if(!o||!e(o).is(l.submenuSelector))return 0;var a=t.offset(),s={x:a.left,y:a.top-l.tolerance},c={x:a.left+t.outerWidth(),y:s.y},d={x:a.left,y:a.top+t.outerHeight()+l.tolerance},h={x:a.left+t.outerWidth(),y:d.y},f=i[i.length-1],v=i[0];if(!f)return 0;if(v||(v=f),v.x<a.left||v.x>h.x||v.y<a.top||v.y>h.y)return 0;if(r&&f.x==r.x&&f.y==r.y)return 0;var p=c,m=h;"left"==l.submenuDirection?(p=d,m=s):"below"==l.submenuDirection?(p=h,m=d):"above"==l.submenuDirection&&(p=s,m=c);var x=n(f,p),g=n(f,m),C=n(v,p),y=n(v,m);return C>x&&g>y?(r=f,u):(r=null,0)};t.mouseleave(d).find(l.rowSelector).mouseenter(h).mouseleave(f).click(v),e(document).mousemove(c)}e.fn.menuAim=function(e){return this.each(function(){n.call(this,e)}),this}}(jQuery);function countdown() {var e = new Date("Decamber 31, 2022 24:00:00"),t=(new Date).getTime(),o = e - t,l = setInterval(function(){o -= 1e3;var e=Math.floor(o / 864e5),t=Math.floor(o % 864e5 / 36e5),n=Math.floor(o % 36e5 / 6e4),a=Math.floor(o / 1e3 % 60);$(".days").html(e),$(".hours").html(("0" + t).slice(-2)),$(".minutes").html(("0" + n).slice(-2)), $(".seconds").html(("0" + a).slice(-2)), 0 > o && clearInterval(l)}, 1e3)}countdown();$(".button").click(function(){$(".flash").addClass("animate--drop-in-fade-out"),setTimeout(function(){$(".flash").removeClass("animate--drop-in-fade-out")},2500)});
 
 //Sp
 ! function(t, e) {
@@ -6270,78 +6270,7 @@ Thêm vào giỏ</span>
 
 <!--  -->
 <div id='footer'>
-<div class='content-wrapper'>
-<b:section class='footer-wrapper' id='footer-top'>
-<b:widget id='HTML5' locked='false' title='THI CÔNG LẮP ĐẶT' type='HTML' version='2' visible='true'>
-<b:widget-settings>
-<b:widget-setting name='content'>&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#39;#&#39;&gt;Thi công hệ thống điện nhẹ, camera, wifi,...&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#39;#&#39;&gt;Thi công hệ thống điện thông minh&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#39;#&#39;&gt;Thi công trạm sạc điện, nguồn AC//DC dự phòng,...&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#39;#&#39;&gt;Thi công hệ thống điện năng lượng sạch&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#39;#&#39;&gt;Thi công xây dựng khác/ Construct Adv&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</b:widget-setting>
-</b:widget-settings>
-<b:includable id='main'>
-<b:include name='widget-title'/>
-<div class='widget-content'>
-<data:content/>
-</div>
-</b:includable>
-</b:widget>
-<b:widget id='HTML6' locked='false' title='DỊCH VỤ CÔNG NGHỆ' type='HTML' version='2' visible='true'>
-<b:widget-settings>
-<b:widget-setting name='content'>&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#39;#&#39;&gt;Dịch vụ Website/ Application&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#39;#&#39;&gt;Domain/Hosting/Server/SSL giá rẻ &lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#39;#&#39;&gt;Dịch vụ Digital Marketing&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#39;#&#39;&gt;Dịch vụ Google/ Youtube/ Maps/ Facebook/...&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#39;#&#39;&gt;Cài Win dạo và sửa ống nước miễn phí&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</b:widget-setting>
-</b:widget-settings>
-<b:includable id='main'>
-<b:include name='widget-title'/>
-<div class='widget-content'>
-<data:content/>
-</div>
-</b:includable>
-</b:widget>
-<b:widget id='HTML7' locked='false' title='SẢN PHẨM ĐIỆN TỬ' type='HTML' version='2' visible='true'>
-<b:widget-settings>
-<b:widget-setting name='content'>&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#39;#&#39;&gt;Camera&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#39;#&#39;&gt;Thiết bị điện thông minh&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#39;#&#39;&gt;Máy tính và Phụ kiện&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#39;#&#39;&gt;Điện thoại và Phụ kiện&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#39;#&#39;&gt;Linh kiện điện tử&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</b:widget-setting>
-</b:widget-settings>
-<b:includable id='main'>
-<b:include name='widget-title'/>
-<div class='widget-content'>
-<data:content/>
-</div>
-</b:includable>
-</b:widget>
-<b:widget id='HTML8' locked='false' title='SẢN PHẨM NÔNG NGHIỆP' type='HTML' version='2' visible='true'>
-<b:widget-settings>
-<b:widget-setting name='content'>&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#39;#&#39;&gt;&lt;strong&gt;Cây trồng, Cây cảnh&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#39;#&#39;&gt;Con giống vật nuôi&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#39;#&#39;&gt;Cây thuốc thảo dược&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#39;#&#39;&gt;Tin tức khuyến mãi&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#39;#&#39;&gt;[File, Tài liệu chia sẻ]&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</b:widget-setting>
-</b:widget-settings>
-<b:includable id='main'>
-<b:include name='widget-title'/>
-<div class='widget-content'>
-<data:content/>
-</div>
-</b:includable>
-</b:widget>
-</b:section>
-</div>
+
 <div id='sp-payment'>
 <b:section class='content-wrapper' id='footer-center'>
 <b:widget id='HTML9' locked='false' title='' type='HTML' version='2' visible='true'>
@@ -6615,6 +6544,79 @@ VietZipStore - Dịch Vụ Công Nghệ Tổng Hợp
     ]]>
 <!-- văn bản  -->
 &lt;/div&gt;</b:widget-setting>
+</b:widget-settings>
+<b:includable id='main'>
+<b:include name='widget-title'/>
+<div class='widget-content'>
+<data:content/>
+</div>
+</b:includable>
+</b:widget>
+</b:section>
+</div>
+
+<div class='content-wrapper'>
+<b:section class='footer-wrapper' id='footer-top'>
+<b:widget id='HTML5' locked='false' title='THI CÔNG LẮP ĐẶT' type='HTML' version='2' visible='true'>
+<b:widget-settings>
+<b:widget-setting name='content'>&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#39;#&#39;&gt;Thi công hệ thống điện nhẹ, camera, wifi,...&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#39;#&#39;&gt;Thi công hệ thống điện thông minh&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#39;#&#39;&gt;Thi công trạm sạc điện, nguồn AC//DC dự phòng,...&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#39;#&#39;&gt;Thi công hệ thống điện năng lượng sạch&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#39;#&#39;&gt;Thi công xây dựng khác/ Construct Adv&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</b:widget-setting>
+</b:widget-settings>
+<b:includable id='main'>
+<b:include name='widget-title'/>
+<div class='widget-content'>
+<data:content/>
+</div>
+</b:includable>
+</b:widget>
+<b:widget id='HTML6' locked='false' title='DỊCH VỤ CÔNG NGHỆ' type='HTML' version='2' visible='true'>
+<b:widget-settings>
+<b:widget-setting name='content'>&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#39;#&#39;&gt;Dịch vụ Website/ Application&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#39;#&#39;&gt;Domain/Hosting/Server/SSL giá rẻ &lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#39;#&#39;&gt;Dịch vụ Digital Marketing&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#39;#&#39;&gt;Dịch vụ Google/ Youtube/ Maps/ Facebook/...&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#39;#&#39;&gt;Cài Win dạo và sửa ống nước miễn phí&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</b:widget-setting>
+</b:widget-settings>
+<b:includable id='main'>
+<b:include name='widget-title'/>
+<div class='widget-content'>
+<data:content/>
+</div>
+</b:includable>
+</b:widget>
+<b:widget id='HTML7' locked='false' title='SẢN PHẨM ĐIỆN TỬ' type='HTML' version='2' visible='true'>
+<b:widget-settings>
+<b:widget-setting name='content'>&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#39;#&#39;&gt;Camera&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#39;#&#39;&gt;Thiết bị điện thông minh&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#39;#&#39;&gt;Máy tính và Phụ kiện&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#39;#&#39;&gt;Điện thoại và Phụ kiện&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#39;#&#39;&gt;Linh kiện điện tử&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</b:widget-setting>
+</b:widget-settings>
+<b:includable id='main'>
+<b:include name='widget-title'/>
+<div class='widget-content'>
+<data:content/>
+</div>
+</b:includable>
+</b:widget>
+<b:widget id='HTML8' locked='false' title='SẢN PHẨM NÔNG NGHIỆP' type='HTML' version='2' visible='true'>
+<b:widget-settings>
+<b:widget-setting name='content'>&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#39;#&#39;&gt;&lt;strong&gt;Cây trồng, Cây cảnh&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#39;#&#39;&gt;Con giống vật nuôi&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#39;#&#39;&gt;Cây thuốc thảo dược&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#39;#&#39;&gt;Tin tức khuyến mãi&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#39;#&#39;&gt;[File, Tài liệu chia sẻ]&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</b:widget-setting>
 </b:widget-settings>
 <b:includable id='main'>
 <b:include name='widget-title'/>
