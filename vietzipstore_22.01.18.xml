@@ -38,16 +38,16 @@
     <!-- <link rel="stylesheet" href="./VietZipStore/css-js/vzs-css-isLayoutMode.css" integrity="sha384" crossorigin="anonymous"> -->
     <!-- css add -->
     
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/luongthehien93/vietzipstore@main/css-js/icon.css" integrity="sha384" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/luongthehien93/vietzipstore@main/css-js/icon.js" integrity="sha384" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/luongthehien93/vietzipstore@main/css-js/flat-icon-support.css" integrity="sha384" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/luongthehien93/vietzipstore@main/css-js/list-footer-fixed.css" integrity="sha384" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/luongthehien93/vietzipstore.com@main/css-js/icon.css" integrity="sha384" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/luongthehien93/vietzipstore.com@main/css-js/icon.js" integrity="sha384" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/luongthehien93/vietzipstore.com@main/css-js/flat-icon-support.css" integrity="sha384" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/luongthehien93/vietzipstore.com@main/css-js/list-footer-fixed.css" integrity="sha384" crossorigin="anonymous">
     
     
     <!--====Lên Đầu Trang===================================================================================  -->
         <button onclick="topFunction()" id="myBtn" title="Go to top">Lên Đầu Trang</button>
-        <link href='https://cdn.jsdelivr.net/gh/luongthehien93/vietzipstore@main/css-js/go-to-top.css' rel='stylesheet' />
-        <script src="https://cdn.jsdelivr.net/gh/luongthehien93/vietzipstore@main/css-js/go-to-top.js"></script>
+        <link href='https://cdn.jsdelivr.net/gh/luongthehien93/vietzipstore.com@main/css-js/go-to-top.css' rel='stylesheet' />
+        <script src="https://cdn.jsdelivr.net/gh/luongthehien93/vietzipstore.com@main/css-js/go-to-top.js"></script>
         <!--====Lên Đầu Trang===================================================================================  -->
 
     
@@ -1090,10 +1090,10 @@ var language_page = "Vietnamese";
 // Thêm chi phí vận chuyển theo từng khu vực
 var modernshop_tambah_alamat = [
 ["Chọn vị trí", 0],
-["Quảng Nam, Đà Nẵng", 10000],
-["TP. Hồ Chí Minh", 30000],
-["TP. Hà Nội", 30000],
-["Tỉnh khác", 45000]
+["Quảng Nam, Đà Nẵng", 0],
+["TP. Hồ Chí Minh", 0],
+["TP. Hà Nội", 0],
+["Tỉnh khác", 0]
 ];
 //]]>
       </script>
@@ -1126,7 +1126,7 @@ var t=e(this);t.next("ul").removeClass("is-hidden").end().parent(".has-children"
 //=========
 var t=e(".modernshop-menu").hasClass("open-to-left")?"left":"right";e(".modernshop-dropdown").menuAim({activate:function(n){e(n).children().addClass("is-active").removeClass("fade-out"),0==e(".modernshop-dropdown .fade-in").length&&e(n).children("ul").addClass("fade-in")},deactivate:function(n){e(n).children().removeClass("is-active"),(0==e("li.has-children:hover").length||e("li.has-children:hover").is(e(n)))&&(e(".modernshop-dropdown").find(".fade-in").removeClass("fade-in"),e(n).children("ul").addClass("fade-out"))},exitMenu:function(){return e(".modernshop-dropdown").find(".is-active").removeClass("is-active"),!0},submenuDirection:t}),e(".go-back").on("click",function(){var n=e(this);e(this).parent("ul").parent(".has-children").parent("ul");n.parent("ul").addClass("is-hidden").parent(".has-children").parent("ul").removeClass("move-out")}),(e("[placeholder]").focus(function(){var n=e(this);n.val()==n.attr("placeholder")&&n.val("")}).blur(function(){var n=e(this);""!=n.val()&&n.val()!=n.attr("placeholder")||n.val(n.attr("placeholder"))}).blur(),e("[placeholder]").parents("form").submit(function(){e(this).find("[placeholder]").each(function(){var n=e(this);n.val()==n.attr("placeholder")&&n.val("")})}))}),function(e){
 function n(n){var t=e(this),o=null,i=[],r=null,a=null,l=e.extend({rowSelector:"> li",submenuSelector:"*",submenuDirection:"right",tolerance:75,enter:e.noop,exit:e.noop,activate:e.noop,deactivate:e.noop,exitMenu:e.noop},n),s=3,u=300,c=function(e){i.push({x:e.pageX,y:e.pageY}),i.length>s&&i.shift()},d=function(){a&&clearTimeout(a),l.exitMenu(this)&&(o&&l.deactivate(o),o=null)},h=function(){a&&clearTimeout(a),l.enter(this),m(this)},f=function(){l.exit(this)},v=function(){p(this)},p=function(e){e!=o&&(o&&l.deactivate(o),l.activate(e),o=e)},m=function(e){var n=x();n?a=setTimeout(function(){m(e)},n):p(e)},x=function(){
-function n(e,n){return(n.y-e.y)/(n.x-e.x)}if(!o||!e(o).is(l.submenuSelector))return 0;var a=t.offset(),s={x:a.left,y:a.top-l.tolerance},c={x:a.left+t.outerWidth(),y:s.y},d={x:a.left,y:a.top+t.outerHeight()+l.tolerance},h={x:a.left+t.outerWidth(),y:d.y},f=i[i.length-1],v=i[0];if(!f)return 0;if(v||(v=f),v.x<a.left||v.x>h.x||v.y<a.top||v.y>h.y)return 0;if(r&&f.x==r.x&&f.y==r.y)return 0;var p=c,m=h;"left"==l.submenuDirection?(p=d,m=s):"below"==l.submenuDirection?(p=h,m=d):"above"==l.submenuDirection&&(p=s,m=c);var x=n(f,p),g=n(f,m),C=n(v,p),y=n(v,m);return C>x&&g>y?(r=f,u):(r=null,0)};t.mouseleave(d).find(l.rowSelector).mouseenter(h).mouseleave(f).click(v),e(document).mousemove(c)}e.fn.menuAim=function(e){return this.each(function(){n.call(this,e)}),this}}(jQuery);function countdown() {var e = new Date("Decamber 31, 2021 24:00:00"),t=(new Date).getTime(),o = e - t,l = setInterval(function(){o -= 1e3;var e=Math.floor(o / 864e5),t=Math.floor(o % 864e5 / 36e5),n=Math.floor(o % 36e5 / 6e4),a=Math.floor(o / 1e3 % 60);$(".days").html(e),$(".hours").html(("0" + t).slice(-2)),$(".minutes").html(("0" + n).slice(-2)), $(".seconds").html(("0" + a).slice(-2)), 0 > o && clearInterval(l)}, 1e3)}countdown();$(".button").click(function(){$(".flash").addClass("animate--drop-in-fade-out"),setTimeout(function(){$(".flash").removeClass("animate--drop-in-fade-out")},2500)});
+function n(e,n){return(n.y-e.y)/(n.x-e.x)}if(!o||!e(o).is(l.submenuSelector))return 0;var a=t.offset(),s={x:a.left,y:a.top-l.tolerance},c={x:a.left+t.outerWidth(),y:s.y},d={x:a.left,y:a.top+t.outerHeight()+l.tolerance},h={x:a.left+t.outerWidth(),y:d.y},f=i[i.length-1],v=i[0];if(!f)return 0;if(v||(v=f),v.x<a.left||v.x>h.x||v.y<a.top||v.y>h.y)return 0;if(r&&f.x==r.x&&f.y==r.y)return 0;var p=c,m=h;"left"==l.submenuDirection?(p=d,m=s):"below"==l.submenuDirection?(p=h,m=d):"above"==l.submenuDirection&&(p=s,m=c);var x=n(f,p),g=n(f,m),C=n(v,p),y=n(v,m);return C>x&&g>y?(r=f,u):(r=null,0)};t.mouseleave(d).find(l.rowSelector).mouseenter(h).mouseleave(f).click(v),e(document).mousemove(c)}e.fn.menuAim=function(e){return this.each(function(){n.call(this,e)}),this}}(jQuery);function countdown() {var e = new Date("February 31, 2022 24:00:00"),t=(new Date).getTime(),o = e - t,l = setInterval(function(){o -= 1e3;var e=Math.floor(o / 864e5),t=Math.floor(o % 864e5 / 36e5),n=Math.floor(o % 36e5 / 6e4),a=Math.floor(o / 1e3 % 60);$(".days").html(e),$(".hours").html(("0" + t).slice(-2)),$(".minutes").html(("0" + n).slice(-2)), $(".seconds").html(("0" + a).slice(-2)), 0 > o && clearInterval(l)}, 1e3)}countdown();$(".button").click(function(){$(".flash").addClass("animate--drop-in-fade-out"),setTimeout(function(){$(".flash").removeClass("animate--drop-in-fade-out")},2500)});
 
 //Sp
 ! function(t, e) {
@@ -3617,22 +3617,20 @@ p.explainpaymethod:before{font-family:&quot;Font Awesome 5 Pro&quot;;margin-top:
                   <h2 class='title'>Đặt hàng</h2>
                   <div class='contact-form-widget'>
                     <div class='form'>
-                      <form name='contact-form'>
-                      
-                      
+                      <form name='contact-form' action='https://docs.google.com/forms/u/0/d/e/1FAIpQLSeyRNlEXdmDCPVOhEpDl5BoGel-VpInuWsw2RKHMfL_QXfmLA/formResponse'>
                       
                         <div class='formone'>
                           <div class='form-section1 form-section'>
                             <span class='labelnameform'>Họ và tên</span>
                             <span class='formrequired'>*</span>
                             <span class='message-show' style='display:none'>Nhập họ và tên</span>
-                            <input class='eachrequire contact-form-name' id='ContactForm1_contact-form-name' name='name' size='30' type='text' value=''/>
+                            <input class='eachrequire contact-form-name' id='ContactForm1_contact-form-name' name='entry.645022893' size='30' type='text' value=''/>
                           </div>
                           <div class='form-section2 form-section'>
                             <span class='labelnameform'>Email</span>
                             <span class='formrequired'>*</span>
                             <span class='message-show' style='display:none'>Nhập địa chỉ email.</span>
-                            <input class='contact-form-email' id='ContactForm1_contact-form-email' size='30' type='text' value=''/>
+                            <input class='contact-form-email' name='entry.268352480' id='ContactForm1_contact-form-email' size='30' type='text' value=''/>
                           </div>
                           <div class='clear'/>
                         </div>
@@ -3640,19 +3638,20 @@ p.explainpaymethod:before{font-family:&quot;Font Awesome 5 Pro&quot;;margin-top:
                           <span class='formnamenumber'>Số điện thoại</span>
                           <span class='formrequired'>*</span>
                           <span class='message-show' style='display:none'>Nhập số điện thoại.</span>
-                          <input class='eachrequire contact-form-number' id='contact-form-number' name='Nomor HandPhone' size='30' type='text' value=''/>
+                          <input class='eachrequire contact-form-number' id='contact-form-number' name='entry.2014741117' size='30' type='text' value=''/>
                         </div>
                         <div class='form-section4 form-section'>
                           <span class='formnameaddress'>Địa chỉ (Khách hàng ghi cụ thể số nhà, tên đường,...)</span>
                           <span class='formrequired'>*</span>
                           <span class='message-show' style='display:none'>Nhập địa chỉ giao hàng.</span>
-                          <input class='eachrequire contact-form-address' id='contact-form-address' name='Apartemen, Nama Jalan, dll' size='30' type='text'/>
+                          <input class='eachrequire contact-form-address' id='contact-form-address' name='entry.1097056332' size='30' type='text'/>
                         </div>
                         <div class='formtwo'>
-                          <div class='form-section5'>
+                          <div class='form-section5' name='entry.793733497'>
                             <div class='shippingto'>
                               <span class='formnameaddress'>Tỉnh</span>
                               <span class='formrequired'/>
+                              <!-- <input class='' id='' name='entry.793733497' type='text'/> -->
                               <label class='cityselect'>
                                 <select id='modernshop-selectBiaya'>
                                 </select>
@@ -3663,7 +3662,7 @@ p.explainpaymethod:before{font-family:&quot;Font Awesome 5 Pro&quot;;margin-top:
                           </div>
                           <div class='form-section6'>
                             <span class='formnameaddress'>Ghi chú</span>
-                            <input class='contact-form-postcode' id='contact-form-addrpostcodeess' name='' size='300' type='text' value=''/>
+                            <input class='contact-form-postcode' id='contact-form-addrpostcodeess' name='entry.1575478676' size='300' type='text' value=''/>
                           </div>
                           <div class='tambahan-biaya-pengiriman' style='display:none'/>
                           <div class='clear'/>
@@ -3699,8 +3698,8 @@ Thanh toán khi nhận hàng (COD)</label>
                 </ul>
                 <div class='boxcheckoutlast'>
                   <div class='container'>
-                    <input class='check-with-cash' style='display:block' type='button' value='Thanh toán khi nhận hàng'/>
-                    <input class='check-with-bank' style='display:block' type='button' value='Chuyển khoản ngân hàng'/>
+                    <input class='check-with-cash' style='display:block' type='button' value='Thanh toán khi nhận hàng' name='entry.1352524871'/>
+                    <input class='check-with-bank' style='display:block' type='button' value='Chuyển khoản ngân hàng' name='entry.1352524871'/>
                   </div>
                 </div>
               </div>
@@ -3831,6 +3830,7 @@ Thanh toán khi nhận hàng (COD)</label>
               </div>
             </div>
             <div class='simpleCart_items'>
+            <input class='' id='' name='entry.1160870520' size='' type='text' value=''/>
             </div>
             <table>
               <tbody>
@@ -3838,6 +3838,7 @@ Thanh toán khi nhận hàng (COD)</label>
                   <td class='odd'>Số lượng: </td>
                   <td class='even'>
                     <span class='simpleCart_quantity'>0</span>
+                    <!-- <input class='' id='' name='entry.21691102' size='' type='text' value=''/> -->
                   </td>
                 </tr>
                 <tr>
@@ -3855,7 +3856,9 @@ Thanh toán khi nhận hàng (COD)</label>
                 <tr class='grtotal'>
                   <td class='odd'>Tổng cộng: </td>
                   <td class='even'>
-                    <span class='simpleCart_grandTotal'/>
+                    <span class='simpleCart_grandTotal' name='entry.1369622241'/>
+                    <!-- <input class='' id='' name='entry.1369622241' size='' type='text' value=''/> -->
+                    
                   </td>
                 </tr>
               </tbody>
@@ -6717,7 +6720,7 @@ VietZipStore - Dịch Vụ Công Nghệ Tổng Hợp
 
     <!-- js add -->
     <!--===js hiển thị thời gian ===================================================-->
-    <script src="https://cdn.jsdelivr.net/gh/luongthehien93/vietzipstore@main/css-js/startDayTime.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/luongthehien93/vietzipstore.com@main/css-js/startDayTime.js"></script>
     <!--  -->
      <!-- <div>
             <span id="timeDay"></span>
@@ -6741,20 +6744,20 @@ VietZipStore - Dịch Vụ Công Nghệ Tổng Hợp
             <ul>
                 <li>
                     <a target="_blank" href="http://www.messenger.com/t/vietzipstore">
-                        <img src="https://github.com/luongthehien93/vietzipstore/raw/main/img/icon/chat-fb.svg" alt="btn-ho-tro-fb">
+                        <img src="https://github.com/luongthehien93/vietzipstore.com/raw/main/img/icon/chat-fb.svg" alt="btn-ho-tro-fb">
                     </a>
 
                     <a target="_blank" href="http://www.zalo.me/0868886905">
-                        <img src="https://github.com/luongthehien93/vietzipstore/raw/main/img/icon/chat-zalo.svg" alt="btn-ho-tro-zalo">
+                        <img src="https://github.com/luongthehien93/vietzipstore.com/raw/main/img/icon/chat-zalo.svg" alt="btn-ho-tro-zalo">
                     </a>
 
                     <!-- <a href="javascript:void(0);" class="show-popup-call-center"> -->
                     <a href="tel:84868886905" class="show-popup-call-center">
-                        <img src="https://github.com/luongthehien93/vietzipstore/raw/main/img/icon/goi-mien-phi.svg" alt="btn-ho-tro-hotline">
+                        <img src="https://github.com/luongthehien93/vietzipstore.com/raw/main/img/icon/goi-mien-phi.svg" alt="btn-ho-tro-hotline">
                     </a>
 
                     <a href="https://goo.gl/maps/Dt5hmMprVaHtbRAy6" class="show-popup-support-local">
-                        <img src="https://github.com/luongthehien93/vietzipstore/raw/main/img/icon/chi-duong.svg" alt="btn-ho-tro-map">
+                        <img src="https://github.com/luongthehien93/vietzipstore.com/raw/main/img/icon/chi-duong.svg" alt="btn-ho-tro-map">
                     </a>
                 </li>
             </ul>
@@ -6765,20 +6768,20 @@ VietZipStore - Dịch Vụ Công Nghệ Tổng Hợp
         <ul class="list-footer-fixed">
             <li>
                 <a href="javascript:void(0)" class="menu-modernshop-trigger dropdown-is-active">
-                    <img src="https://github.com/luongthehien93/vietzipstore/blob/main/img/icon/icon-menu-300.png?raw=true" alt="menu">
+                    <img src="https://github.com/luongthehien93/vietzipstore.com/blob/main/img/icon/icon-menu-300.png?raw=true" alt="menu">
                     <span>Menu</span>
                 </a>
             </li>
             <li>
                 <a href="http://www.messenger.com/t/vietzipstore">
-                    <img src="https://github.com/luongthehien93/vietzipstore/blob/main/img/icon/icon-facebook-300.png?raw=true" alt="icon-mobile-fb">
+                    <img src="https://github.com/luongthehien93/vietzipstore.com/blob/main/img/icon/icon-facebook-300.png?raw=true" alt="icon-mobile-fb">
                     <span>Chat FB</span>
                 </a>
             </li>
 
             <li>
                 <a href="http://www.zalo.me/0868886905">
-                    <img src="https://github.com/luongthehien93/vietzipstore/blob/main/img/icon/icon-zalo-300.png?raw=true" alt="icon-mobile-zalo">
+                    <img src="https://github.com/luongthehien93/vietzipstore.com/blob/main/img/icon/icon-zalo-300.png?raw=true" alt="icon-mobile-zalo">
                     <span>Chat Zalo</span>
                 </a>
             </li>
@@ -6786,7 +6789,7 @@ VietZipStore - Dịch Vụ Công Nghệ Tổng Hợp
             <li>
                 <!-- <a href="javascript:void(0);" class="show-popup-support-hotline"> -->
                 <a href="tel:84868886905" class="show-popup-support-hotline">
-                    <img src="https://github.com/luongthehien93/vietzipstore/blob/main/img/icon/icon-phone-gif.gif?raw=true" class="icon-phone-footer animated infinite tada delay-3s" alt="icon-phone">
+                    <img src="https://github.com/luongthehien93/vietzipstore.com/blob/main/img/icon/icon-phone-gif.gif?raw=true" class="icon-phone-footer animated infinite tada delay-3s" alt="icon-phone">
                     <span>Gọi điện</span>
                 </a>
             </li>
@@ -6794,7 +6797,7 @@ VietZipStore - Dịch Vụ Công Nghệ Tổng Hợp
             <li>
                 <!-- <a href="javascript:void(0);" class="show-popup-support-local"> -->
                 <a href="https://goo.gl/maps/Dt5hmMprVaHtbRAy6" class="show-popup-support-local">
-                    <img src="https://github.com/luongthehien93/vietzipstore/blob/main/img/icon/icon-map-64.png?raw=true" alt="icon-mobile-map">
+                    <img src="https://github.com/luongthehien93/vietzipstore.com/blob/main/img/icon/icon-map-64.png?raw=true" alt="icon-mobile-map">
                     <span>Chỉ đường</span>
                 </a>
             </li>

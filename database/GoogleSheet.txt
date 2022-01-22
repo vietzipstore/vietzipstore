@@ -1,0 +1,9 @@
+ID triển khai
+AKfycbxwfpOF9M90eEBYAPlWuvy3pn4ye9IBTG0dR6h2J4kLdCSEO1pQZyRXfyWNBE4OaJKFfg
+Ứng dụng web
+URL
+https://script.google.com/macros/s/AKfycbxwfpOF9M90eEBYAPlWuvy3pn4ye9IBTG0dR6h2J4kLdCSEO1pQZyRXfyWNBE4OaJKFfg/exec
+Thư viện
+URL
+https://script.google.com/macros/library/d/1SKeth_4qQ8Ca4U461bQ0e9xYhJNnFbuFocjo9XVZx6pA9KBGVpocXey3/4
+Để những người và nhóm khác có thể sử dụng dự án này làm thư viện, hãy chia sẻ dự án này với họ.
