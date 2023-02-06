@@ -1,0 +1,126 @@
+<!-- html-css-js===========================================================================
+1. lien-he
+2. doc-tiep
+3. tabbed-content/ ul.nav.nav-line-bottom.nav-uppercase.nav-size-normal.nav-right
+4. popupx affilite ladipage nguyen
+5. 
+6.Plugin chat facebook===========================================================================  
+====html-css-js===========================================================================  -->
+
+
+
+<!--1.lien-he===========================================================================  -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/luongthehien93/vietzipstore.com@main/css-js/flat-icon-support.css" integrity="sha384" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/luongthehien93/vietzipstore.com@main/css-js/list-footer-fixed.css" integrity="sha384" crossorigin="anonymous">
+
+
+        
+        <div class="flat-icon-support">
+            <ul>
+                <li>
+                    <a target="_blank" href="http://www.messenger.com/t/vietzipstore">
+                        <img src="https://github.com/luongthehien93/vietzipstore.com/raw/main/img/icon/chat-fb.svg" alt="btn-ho-tro-fb">
+                    </a>
+
+                    <a target="_blank" href="http://www.zalo.me/+84868886905">
+                        <img src="https://github.com/luongthehien93/vietzipstore.com/raw/main/img/icon/chat-zalo.svg" alt="btn-ho-tro-zalo">
+                    </a>
+
+                    <!-- <a href="javascript:void(0);" class="show-popup-call-center"> -->
+                    <a target="_blank" href="tel:+84868886905" class="show-popup-call-center">
+                        <img src="https://github.com/luongthehien93/vietzipstore.com/raw/main/img/icon/goi-mien-phi.svg" alt="btn-ho-tro-hotline">
+                    </a>
+
+                    <a target="_blank" href="https://goo.gl/maps/wKrNxELChMNb1ASY8" class="show-popup-support-local">
+                        <img src="https://github.com/luongthehien93/vietzipstore.com/raw/main/img/icon/chi-duong.svg" alt="btn-ho-tro-map">
+                    </a>
+                </li>
+            </ul>
+            
+        </div>
+        
+        
+        <ul class="list-footer-fixed">
+            <li>
+                <a href="javascript:void(0)" class=" " id =" ">
+                    <img src="https://github.com/luongthehien93/vietzipstore.com/blob/main/img/icon/icon-menu-300.png?raw=true" alt="menu">
+                    <span>Menu</span>
+                </a>
+            </li>
+            <li>
+                <a target="_blank" href="http://www.messenger.com/t/vietzipstore">
+                    <img src="https://github.com/luongthehien93/vietzipstore.com/blob/main/img/icon/icon-facebook-300.png?raw=true" alt="icon-mobile-fb">
+                    <span>Chat FB</span>
+                </a>
+            </li>
+
+            <li>
+                <a target="_blank" href="http://www.zalo.me/+84868886905">
+                    <img src="https://github.com/luongthehien93/vietzipstore.com/blob/main/img/icon/icon-zalo-300.png?raw=true" alt="icon-mobile-zalo">
+                    <span>Chat Zalo</span>
+                </a>
+            </li>
+
+            <li>
+                <!-- <a href="javascript:void(0);" class="show-popup-support-hotline"> -->
+                <a target="_blank" href="tel:+84868886905" class="show-popup-support-hotline">
+                    <img src="https://github.com/luongthehien93/vietzipstore.com/blob/main/img/icon/icon-phone-gif.gif?raw=true" class="icon-phone-footer animated infinite tada delay-3s" alt="icon-phone">
+                    <span>Gọi điện</span>
+                </a>
+            </li>
+
+            <li>
+                <!-- <a href="javascript:void(0);" class="show-popup-support-local"> -->
+                <a target="_blank" href="https://goo.gl/maps/wKrNxELChMNb1ASY8" class="show-popup-support-local">
+                    <img src="https://github.com/luongthehien93/vietzipstore.com/blob/main/img/icon/icon-map-64.png?raw=true" alt="icon-mobile-map">
+                    <span>Chỉ đường</span>
+                </a>
+            </li>
+        </ul>
+<!--1.lien-he===========================================================================  -->
+
+<!--2. doc-tiep===========================================================================  -->
+<style> 
+p.from_the_blog_excerpt:after {
+    content: "Đọc tiếp... ";
+    display: block;
+  	position:absolute;
+    right:0px;
+ 	 	width: 120px;
+    margin-bottom: 1em;
+    color: #fff;
+    background-color: var(--primary-color);
+    border-color: rgba(0,0,0,.05);
+    text-align: center;
+  	
+  }
+  </style>
+<!--2. doc-tiep===========================================================================  -->
+
+
+<!--3. ul.nav.nav-line-bottom.nav-uppercase.nav-size-normal.nav-right===========================================================================  -->
+
+<style> 
+  div.tabbed-content{
+     margin-top: -42px;
+  }
+  
+  ul.nav.nav-line-bottom.nav-uppercase.nav-size-normal.nav-right {
+    
+    margin-top: -120px;
+  }
+  
+  ul.list-footer-fixed{
+    list-style: none;
+    }
+  </style>
+
+<!--3. ul.nav.nav-line-bottom.nav-uppercase.nav-size-normal.nav-right===========================================================================  -->
+
+<!-- popupx affilite ladipage nguyen -->
+<script src="https://w.ladicdn.com/popupx/sdk.js" id="5d4e748e0a83a22a0483e8e9" async></script>
+<!-- popupx affilite ladipage nguyen -->
+
+<!--6.Plugin chat facebook===========================================================================  -->
+
+<!--6.Plugin chat facebook===========================================================================  -->

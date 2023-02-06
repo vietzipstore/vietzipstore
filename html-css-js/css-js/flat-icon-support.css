@@ -1,0 +1,40 @@
+.flat-icon-support {
+    display: block;
+    position: fixed;
+    bottom: 45px;
+    right: 20px;
+    z-index: 2
+}
+
+.flat-icon-support ul {
+    display: block
+}
+
+.flat-icon-support ul li {
+    display: block
+}
+
+.flat-icon-support ul li a {
+    display: block;
+    position: relative;
+    transition-property: all;
+    transition-duration: 2s;
+    transition-timing-function: linear;
+    margin-bottom: 5px
+}
+
+.flat-icon-support ul li a:hover {
+    right: 10px
+}
+
+.flat-icon-support ul li a img {
+    height: 35px;
+    width: 120px;
+    display: inline-block
+}
+
+@media only screen and (max-width:640px) {
+    .flat-icon-support {
+        display: none
+    }
+}

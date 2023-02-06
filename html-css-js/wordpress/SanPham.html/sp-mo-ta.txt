@@ -1,0 +1,30 @@
+
+
+<!--sp-mo-ta -->
+[tabgroup style="outline"]
+
+[tab title="Giới Thiệu Sản Phẩm"]
+
+[/tab]
+
+[tab title="Đặt Điểm Nổi Bật"]
+
+[/tab]
+[tab title="Thông Số Kỹ Thuật"]
+
+[/tab]
+
+[/tabgroup]
+
+[row label="san-pham-da-xem-gan-day"]
+
+[col span__sm="12"]
+
+[title text="SẢN PHẨM ĐÃ XEM"]
+
+[recent_products]
+
+[/col]
+
+[/row]
+

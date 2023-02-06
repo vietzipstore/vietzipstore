@@ -1,0 +1,20 @@
+<div class="product-attr-text">
+<div class="product-attr-text">
+<div class="product-attr-text">
+<div class="product-attr-text"><strong>Tình trạng</strong><b>: <span class="adastock" style="color: #008000;">Còn hàng</span></b></div>
+<div class="product-attr-text"><b>Mã sản phẩm: IPC-S42FP-IMOU</b></div>
+<div class="product-attr-text"><strong>Giá khuyến mãi: <span style="color: #ed1c24;">2.790.000 ₫</span></strong></div>
+<div>
+
+<span style="background-color: #ffffff; color: #000000;"><strong>KHUYẾN MÃI KÈM THEO:</strong></span>
+<ul>
+ 	<li><strong>Giao hàng <span style="color: #ed1c24;">Miễn phí</span>: tại Đà Nẵng</strong></li>
+ 	<li><strong>Cài đặt tại nhà: <span style="color: #ed1c24;">+100.000 đ</span></strong></li>
+ 	<li><strong>Thẻ nhớ: 32GB: <span style="color: #ed1c24;">+150k</span>, 64GB: <span style="color: #ed1c24;">+300k</span>,...</strong></li>
+ 	<li><strong>Bảo Hành: dễ dàng, <span style="color: #ed1c24;">chính hãng</span> sản xuất</strong></li>
+</ul>
+</div>
+<div class="product-attr-text"></div>
+</div>
+</div>
+</div>
